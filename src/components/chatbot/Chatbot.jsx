@@ -180,7 +180,7 @@ Do NOT provide specific investment advice - only general educational information
       console.log('Sending request to OpenAI...');
       
       const completion = await openai.chat.completions.create({
-        model: "gpt-4o", // Cost-effective choice for development
+        model: "gpt-4o", 
         messages: [
           { role: "system", content: systemMessage },
           ...conversationHistory,
